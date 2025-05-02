@@ -134,6 +134,7 @@ def get_next_value(
     sequence_name="default",
     initial_value=1,
     reset_value=None,
+    increment=1,
     *,
     nowait=False,
     using=None,
@@ -146,7 +147,7 @@ def get_next_value(
         sequence_name,
         initial_value,
         reset_value,
-        1,
+        increment,
         nowait,
         using,
     )
